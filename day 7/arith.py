@@ -7,10 +7,6 @@ print("Substraction:",a-b)
 print("Multiplication:",a*b)
 print("Division:",a/b)
 
-#Operations happen element by element
 
-#Broadcasting with Scalar
 arr = np.array([10, 20, 30])
 print(arr + 5)
-#Scalar is broadcast logically
-#No extra memory is created
