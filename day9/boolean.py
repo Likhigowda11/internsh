@@ -8,7 +8,7 @@ mask = marks >= 80
 print(mask)
 
 # filter using mask
-# filter using mask
+
 filtered_marks = marks[mask]
 print(filtered_marks)
 

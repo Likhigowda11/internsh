@@ -11,5 +11,5 @@ print(usernames)
 print("\nCleaned Series:")
 print(cleaned_usernames)
 
-print("\nNames containing letter 'a':") g
+print("\nNames containing letter 'a':") 
 print(contains_a)
