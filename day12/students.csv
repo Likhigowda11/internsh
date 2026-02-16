@@ -1,0 +1,17 @@
+Student_ID,Name,Math_Score,Science_Score,English_Score,Attendance_Percentage,Study_Hours_per_Week,Parent_Education_Level,Final_Result
+101,muthu shree,78.0,85.0,90.0,92.0,15,Graduate,Pass
+102,arun kumar,45.0,40.0,50.0,60.0,6,Below High School,Fail
+103,PRIYA SHARMA,,70.0,65.0,80.0,12,Postgraduate,Pass
+104,rahul  singh,88.0,,75.0,85.0,18,Graduate,Pass
+105,anita joseph,34.0,30.0,,70.0,5,Below High School,Fail
+106,vijay kumar,56.0,60.0,58.0,,10,High School,Pass
+107,meena  das,67.0,72.0,68.0,78.0,14,Graduate,Pass
+108,rohit sharma,49.0,44.0,47.0,65.0,8,Below High School,Fail
+109,kavya nair,92.0,95.0,88.0,95.0,20,Postgraduate,Pass
+110,suresh reddy,30.0,35.0,40.0,55.0,4,High School,Fail
+111,divya menon,81.0,79.0,83.0,88.0,16,Graduate,Pass
+112,karan patel,39.0,42.0,45.0,72.0,7,Below High School,Fail
+113,neha gupta,55.0,58.0,,76.0,11,High School,Pass
+114,manoj varma,,65.0,70.0,90.0,17,Graduate,Pass
+115,pooja rai,60.0,,62.0,,9,Below High School,Fail
+101,muthu shree,78.0,85.0,90.0,92.0,15,Graduate,Pass
