@@ -1,43 +1,18 @@
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
 
-data = {
-    "SquareFootage": [800, 1200, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000],
-    "Bedrooms": [2, 3, 3, 4, 4, 5, 5, 6, 6, 7],
-    "Bathrooms": [1, 2, 2, 3, 3, 4, 4, 5, 5, 6],
-    "Price": [150000, 200000, 250000, 300000, 350000, 450000, 500000, 600000, 650000, 2000000],  # 2000000 is an outlier
-    "Location": ["Urban", "Urban", "Suburban", "Suburban", "Suburban", 
-                 "Urban", "Rural", "Rural", "Urban", "Rural"]
-}
+    "Age": [25,32,28,45,36,23,40,29,31,27], 
+    "City_Tier": [1,2,1,3,2,1,3,2,1,2], 
+    "Avg_Session_Time": [15,10,18,8,12,20,7,16,14,19], 
+    "Pages_Visited": [5,3,6,2,4,8,2,5,6,7], 
+    "Products_Viewed": [3,2,4,1,2,5,1,3,4,4], 
+    "Previous_Purchases": [2,1,3,0,1,4,0,2,3,3], 
+    "Discount_Used": [1,0,1,0,1,1,0,1,1,1], 
+    "Total_Spend": [1200,600,1800,300,900,2500,250,1500,2000,1700] 
+} 
 
 df = pd.DataFrame(data)
 
-corr_matrix = df.corr(numeric_only=True)
-
-print("\nCorrelation Matrix:\n")
-print(corr_matrix)
-
-plt.figure(figsize=(8,6))
-sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix Heatmap")
-plt.show()
-
-print("\nHighly Correlated Feature Pairs (>|0.8|):\n")
-
-for i in range(len(corr_matrix.columns)):
-    for j in range(i):
-        if abs(corr_matrix.iloc[i, j]) > 0.8:
-            print(f"{corr_matrix.columns[i]} and {corr_matrix.columns[j]} -> {corr_matrix.iloc[i, j]:.2f}")
-
+# Task 1 - Univariate Analysis
 plt.figure(figsize=(6,4))
-sns.boxplot(y=df["Price"])
-plt.title("Boxplot of House Prices")
-plt.show()
-
-print("\nObservations:")
-print("- Features with correlation above 0.8 indicate strong relationships.")
-print("- Strongly correlated features may cause multicollinearity in ML models.")
-print("- The boxplot shows an extreme high Price value (possible outlier).")
-print("- Outliers can distort the mean and affect regression model performance.")
+sns.histplot(df['Total_Spend'], bins=5, kde=True, color='skyblue')
+plt.title('Distribution of Total Spend')
+plt.xlabel('Total Spend')
