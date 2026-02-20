@@ -23,8 +23,6 @@ print("\nWhy did denominator change?")
 print("Because total marbles reduced from 10 to 9 after first pick.")
 print("The second probability depends on the first event.")
 
-# TASK 2: Independent vs Dependent Events
-
 print("TASK 2: Independent vs Dependent Events\n")
 
 print("Independent Case:")
